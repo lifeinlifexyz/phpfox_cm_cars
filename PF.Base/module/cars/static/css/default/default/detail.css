@@ -1,0 +1,8 @@
+.cars-caption-bold{
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cars-caption-value{
+    margin-bottom: 15px;
+}

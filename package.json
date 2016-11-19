@@ -1,0 +1,12 @@
+{
+    "id": "CM_Cars",
+    "internal_id": 0,
+    "version": "1.0.0",
+    "current_version": null,
+    "name": "CM Cars",
+    "module": false,
+    "type": "app",
+    "icon": "<div class=\"app_icons image_load\" data-src=\"\/\/cdn.codemake.org\/phpfox\/cars\/default.png\"><\/div>",
+    "is_core": false,
+    "store_id": "1643"
+}

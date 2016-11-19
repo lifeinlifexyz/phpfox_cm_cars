@@ -1,0 +1,15 @@
+<module>
+	<data>
+		<module_id>custom</module_id>
+		<product_id>phpfox</product_id>
+		<is_core>1</is_core>
+		<is_active>1</is_active>
+		<is_menu>0</is_menu>
+		<menu />
+		<phrase_var_name>module_custom</phrase_var_name>
+	</data>
+	<custom_field>
+		<field group_name="cars.custom_group_my_group" field_name="my_custom_field" module_id="custom" type_id="cars_advanced_filter" phrase_var_name="custom.custom_my_custom_field" type_name="MEDIUMTEXT" var_type="textarea" is_active="1" is_required="1" ordering="0" />
+		<field group_name="user.custom_group_about_me" field_name="my_text_area" module_id="custom" type_id="cars_advanced_filter" phrase_var_name="custom.custom_my_text_area" type_name="MEDIUMTEXT" var_type="textarea" is_active="1" is_required="0" ordering="0" />
+	</custom_field>
+</module>

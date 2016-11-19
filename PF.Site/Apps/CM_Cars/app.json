@@ -1,0 +1,26 @@
+{
+    "id": "CM_Cars",
+    "name": "CM Cars",
+    "alias": "cmcars",
+    "version": "1.0.0",
+    "icon": "//cdn.codemake.org/phpfox/cars/default.png",
+    "vendor": "<a href=\"//codemake.org\" target=\"_blank\">CodeMake.Org</a> - See all our products <a href=\"//store.phpfox.com/techie/u/ecodemaster\" target=_new>HERE</a> - contact us at: support@codemake.org",
+    "admincp_menu": {
+        "Module Settings": "/setting/edit/?module-id=cars",
+        "Manage Custom Fields": "/cars/custom/",
+        "Add Custom Fields": "/cars/custom/add",
+        "Manage Custom Group": "/cars/custom/group/add",
+        "Add Filter": "/cars/filter/add",
+        "Manage Filters": "/cars/filter/",
+        "Add Location": "/cars/location/add/",
+        "Manage Locations": "/cars/location/",
+        "Manage Cars": "/cars/"
+    },
+    "settings": {
+        "cm_cars_enabled": {
+            "info": "Cars App Enabled",
+            "type": "input:radio",
+            "value": 1
+        }
+    }
+}

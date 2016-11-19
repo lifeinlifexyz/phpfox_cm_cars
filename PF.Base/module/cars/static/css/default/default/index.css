@@ -1,0 +1,16 @@
+#cars-advanced-filters{
+    display: none;
+}
+.cars-filter-active{
+    display: block !important;
+}
+.cars-filter-inactive{
+    display: none !important;
+}
+
+#content div.info_left{
+    padding-left: 0px !important;
+}
+.cars-index-item{
+    margin-bottom: 25px;
+}

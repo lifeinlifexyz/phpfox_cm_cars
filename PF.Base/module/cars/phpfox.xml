@@ -1,0 +1,368 @@
+<module>
+	<data>
+		<module_id>cars</module_id>
+		<product_id>Cars</product_id>
+		<is_core>0</is_core>
+		<is_active>1</is_active>
+		<is_menu>1</is_menu>
+		<menu><![CDATA[a:8:{s:36:"cars.admin_menu_manage_custom_fields";a:1:{s:3:"url";a:2:{i:0;s:4:"cars";i:1;s:6:"custom";}}s:33:"cars.admin_menu_add_custom_fields";a:1:{s:3:"url";a:3:{i:0;s:4:"cars";i:1;s:6:"custom";i:2;s:3:"add";}}s:32:"cars.admin_menu_add_custom_group";a:1:{s:3:"url";a:4:{i:0;s:4:"cars";i:1;s:6:"custom";i:2;s:5:"group";i:3;s:3:"add";}}s:26:"cars.admin_menu_add_filter";a:1:{s:3:"url";a:3:{i:0;s:4:"cars";i:1;s:6:"filter";i:2;s:3:"add";}}s:30:"cars.admin_menu_manage_filters";a:1:{s:3:"url";a:2:{i:0;s:4:"cars";i:1;s:6:"filter";}}s:28:"cars.admin_menu_add_location";a:1:{s:3:"url";a:3:{i:0;s:4:"cars";i:1;s:8:"location";i:2;s:3:"add";}}s:31:"cars.admin_menu_manage_location";a:1:{s:3:"url";a:2:{i:0;s:4:"cars";i:1;s:8:"location";}}s:27:"cars.admin_menu_manage_cars";a:1:{s:3:"url";a:1:{i:0;s:4:"cars";}}}]]></menu>
+		<phrase_var_name>module_cars</phrase_var_name>
+	</data>
+	<menus>
+		<menu module_id="cars" parent_var_name="" m_connection="cars.view" var_name="menu_cars_add_new_car_7192828280959b26bed88ecdd5a978b8" ordering="133" url_value="cars.add" version_id="3.7.7" disallow_access="" module="cars" />
+		<menu module_id="cars" parent_var_name="" m_connection="mobile" var_name="menu_cars_cars_532c28d5412dd75bf975fb951c740a30" ordering="132" url_value="cars" version_id="3.7.7" disallow_access="" module="cars" mobile_icon="small_car.png" />
+		<menu module_id="cars" parent_var_name="" m_connection="cars.index" var_name="menu_cars_add_new_car_bef171476dd7b4030eca4ccce070231c" ordering="131" url_value="cars.add" version_id="3.7.7" disallow_access="" module="cars" />
+		<menu module_id="cars" parent_var_name="" m_connection="main" var_name="menu_cars_541293344fc59_fad58de7366495db4650cfefac2fcd61" ordering="3" url_value="cars" version_id="3.7.7" disallow_access="" module="cars" />
+	</menus>
+	<settings>
+		<setting group="" module_id="cars" is_hidden="0" type="boolean" var_name="enabled_watermark_on_cars" phrase_var_name="setting_enabled_watermark_on_cars" ordering="1" version_id="3.7.7">0</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="string" var_name="car_details_time_stamp" phrase_var_name="setting_car_details_time_stamp" ordering="1" version_id="3.7.7">j/m/Y</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="array" var_name="photo_sizes" phrase_var_name="setting_photo_sizes" ordering="1" version_id="3.7.7"><![CDATA[s:93:"array(
+  0 => '75',
+  1 => '100',
+  2 => '150',
+  3 => '240',
+  4 => '500',
+  5 => '1024',
+);";]]></setting>
+		<setting group="" module_id="cars" is_hidden="0" type="integer" var_name="total_photo_inputs" phrase_var_name="setting_total_photo_inputs" ordering="1" version_id="3.7.7">5</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="integer" var_name="range_years" phrase_var_name="setting_range_years" ordering="1" version_id="3.7.7">1960</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="drop" var_name="car_browse_display_results_default" phrase_var_name="setting_car_browse_display_results_default" ordering="1" version_id="3.7.7"><![CDATA[a:2:{s:7:"default";s:17:"name_photo_detail";s:6:"values";a:2:{i:0;s:17:"name_photo_detail";i:1;s:10:"name_photo";}}]]></setting>
+		<setting group="" module_id="cars" is_hidden="0" type="integer" var_name="limit_to_show_on_front_page" phrase_var_name="setting_limit_to_show_on_front_page" ordering="1" version_id="3.7.7">6</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="integer" var_name="slider_speed" phrase_var_name="setting_slider_speed" ordering="1" version_id="3.7.7">1000</setting>
+		<setting group="" module_id="cars" is_hidden="0" type="integer" var_name="recomended_cars_size" phrase_var_name="setting_recomended_cars_size" ordering="1" version_id="3.7.7">10</setting>
+	</settings>
+	<blocks>
+		<block type_id="0" m_connection="cars.view" module_id="cars" component="cars" location="3" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Recommended</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cars.index" module_id="cars" component="filter" location="1" is_active="1" ordering="1" disallow_access="" can_move="0">
+			<title>Filter</title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="cars.index" module_id="cars" component="frontslider" location="7" is_active="1" ordering="5" disallow_access="" can_move="0">
+			<title></title>
+			<source_code />
+			<source_parsed />
+		</block>
+		<block type_id="0" m_connection="core.index-member" module_id="cars" component="frontslider" location="7" is_active="0" ordering="11" disallow_access="" can_move="0">
+			<title>Front Slider</title>
+			<source_code />
+			<source_parsed />
+		</block>
+	</blocks>
+	<components>
+		<component module_id="cars" component="view" m_connection="cars.view" module="cars" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="cars" component="generalmenu" m_connection="" module="cars" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cars" component="profile" m_connection="cars.profile" module="cars" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="cars" component="cars" m_connection="" module="cars" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cars" component="filter" m_connection="" module="cars" is_controller="0" is_block="1" is_active="1" />
+		<component module_id="cars" component="cars.index" m_connection="cars.index" module="cars" is_controller="1" is_block="0" is_active="1" />
+		<component module_id="cars" component="frontslider" m_connection="" module="cars" is_controller="0" is_block="1" is_active="1" />
+	</components>
+	<phrases>
+		<phrase module_id="cars" version_id="3.7.7" var_name="module_cars" added="1410444666">CodeMake Cars classified app</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="menu_cars_541293344fc59_fad58de7366495db4650cfefac2fcd61" added="1410503476">Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="custom_group_5413ccb601b93" added="1410583733">Employees</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_delete_other_cars" added="1410588739">Can delete other cars?</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_s_successfully_deleted" added="1410589093">Car(s) successfully deleted</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_approve_cars" added="1410589365">Can moderate listings</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="the_car_you_are_trying_to_approve_is_not_valid" added="1410589633">The car you are trying to approve is not valid</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_has_been_approved_on_site_title" added="1410590039">Your car has been approved on {site_title}</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_has_been_approved_on_site_title_message" added="1410590320"><![CDATA[Your car has been approved on {site_title}.
+
+To view this car, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_s_successfully_approved" added="1410590446">Car(s) successfully approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="title" added="1410595747">Keywords</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="cars" added="1410615004">Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="search" added="1410623247">Search</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="release_year" added="1410623312">Release year</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="from" added="1410623363">From</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="to" added="1410623433">To</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="location" added="1410623589">Location</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="sort_results_by" added="1410623644">Sort results by</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="display" added="1410623706">Display</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="latest_added" added="1410624525">Last added</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="type" added="1410686795">Type</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="mark" added="1410702341">Make</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="model" added="1410703203">Model</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="price" added="1410845825">Price</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="currency" added="1410846159">Currency</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_car_browse_display_results_default" added="1410848425"><![CDATA[<title>Browsing listings Display Results</title><info>Select name_photo if you would like to by default display the cars name and photo only within the browse section. Select name_photo_detail if you would like to display the cars name, photo and general details about the product within the browse section.</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="phone" added="1410857468">Phone</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="reset_search_filters" added="1411053214">Reset search filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="browse_cars" added="1411053522">Browse cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="cars_advanced_filter" added="1411144539">Cars advanced filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="main_browse" added="1411144645">Cars main browse</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="custom_group_advanced_filters" added="1411145052">Advanced filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_manage_custom_fields" added="1411213561">Manage Custom Fields</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_add_custom_fields" added="1411213561">Add Custom Fields</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_add_custom_group" added="1411217427">Add Custom Group</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_manage_custom_fields" added="1411217583">Can manage custom fields</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="menu_cars_add_new_car_bef171476dd7b4030eca4ccce070231c" added="1411282569">Add New Car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_add_new_car" added="1411283186">Can members add new car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="description" added="1411298746">Description</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_control_comments_on_cars" added="1411298941">Can control comments on cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="comment_privacy" added="1411299018"><![CDATA[&#1057;omment privacy]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="control_who_can_comment_on_this_car" added="1411299105">Who can comment on this car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="add" added="1411299395">Add</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="update" added="1411299412">Update</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="preview" added="1411299472">Preview</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="add_new_car" added="1411300696">Add new car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="editing_car" added="1411300762">Editing car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="adding_a_new_car" added="1411300948">Adding a new car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_has_been_added" added="1411301068">Your car has been added</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_flood_control_car" added="1411301184"><![CDATA[How many minutes should a user wait before they can submit another car? 
+
+Note: Setting it to "0" (without quotes) is default and users will not have to wait.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_are_posting_a_little_too_soon" added="1411301368">Your are posting a little too soon</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_updated" added="1411301546">Car updated</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_use_editor_on_car" added="1411301749">Can use a WYSIWYG Editor when creating or editing a car? 
+
+Note: The WYSIWYG Editor feature must be enabled.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="additional_options" added="1411302889">Additional Options</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_range_years" added="1411309308"><![CDATA[<title>Range years</title><info>How many years should show the release date of car</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="phone_number" added="1411311123">Phone</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_photo_max_upload_size" added="1411543991"><![CDATA[Max file size for photos upload in kilobits (kb). 
+(1000 kb = 1 mb) 
+For unlimited add "0" without quotes.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_max_images_per_upload" added="1411544244">Define the maximum number of images a user can upload each time they use the upload form. 
+
+Notice: This setting does not control how many images a user can upload in total, just how many they can upload each time they use the upload form to upload new images.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="name_photo_detail" added="1411544689">Name, Photo, Detail</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="name_photo" added="1411545101">Name, Photo</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_photo_s" added="1411550125">Select Photo(s)</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="you_can_upload_a_jpg_gif_or_png_file" added="1411550196">You can upload a JPG, GIF or PNG file.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="the_file_size_limit_is_file_size_if_your_upload_does_not_work_try_uploading_a_smaller_picture" added="1411550284">The file size limit is {file_size}. If your upload does not work, try uploading a smaller picture.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="fill_title_for_car" added="1411550601">Fill in a title for your car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_location_of_the_car" added="1411550826">Select location of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_type_of_the_car" added="1411659136">Select type of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_release_year_of_the_car" added="1411659246">Select release year of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="provide_phone_number" added="1411659515">Provide phone number</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="custom_provide_name" added="1411742488">Provide {name}</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="provide_car_model" added="1411754004">Provide car model</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="provide_car_mark" added="1411754065">Provide car mark</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_image_file" added="1411801799">Select image file</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_cars_must_be_approved" added="1411806009">Cars must be approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_photo_sizes" added="1411808795"><![CDATA[<title>Photo sizes</title><info>Photo sizes</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="ars_not_found" added="1411811226">Cars not found</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="enter_the_price_of_the_car" added="1411812221">Enter the price of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_view_cars" added="1411915619">Can view cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="sorry_the_car_you_are_looking_for_no_longer_exists" added="1411916315"><![CDATA[Sorry, the car you are looking for no longer exists. Please <a href="{link}">click here</a> to browse more cars.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="report_this_car" added="1411919043">Report this car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_s_car_from_time_stamp" added="1411919504"><![CDATA[{time_stamp} car from {full_name}&#039;s]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_is_pending_approval" added="1411920591">Car is pending approval</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_details" added="1411920709">Car details</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_car_details_time_stamp" added="1411921238"><![CDATA[<title>Display date</title><info>Display date</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="added" added="1411921397">Added</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="comments" added="1411921432"><![CDATA[&#1057;omments]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="views" added="1411921461">Views</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="close_advanced_filters" added="1411921816">Close advanced filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_edit_own_car" added="1411923990">Can edit own added cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="approve" added="1411924445">Approve</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="actions" added="1411924486">Actions</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="edit_this_car" added="1411924985">Edit this car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_delete_own_car" added="1411925217">Can delete own car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="delete_this_car" added="1411925323">Delete this car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="read_more" added="1411995270">Read more</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_current_of_total" added="1411997647">Car photo {current} of {total}</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="previous" added="1412010894">Previous</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="next" added="1412010957">Next</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="rotate_left" added="1412012564">Rotate Left</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="rotate_right" added="1412012643">Rotate right</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_preview" added="1412164191">Preview</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="posted_a_comment_on_gender_car_a_href_link_title_a" added="1412225287"><![CDATA[posted a comment on {gender} car <a href="{link}"> {title}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="posted_a_comment_on_user_name_s_car_a_href_link_title_a" added="1412225366"><![CDATA[posted a comment on {user_name}&#039;s car "<a href="{link}">{title}</a>"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="posted_a_car" added="1412225714">posted a car - {title}</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_liked_your_car_title" added="1412225901"><![CDATA[{full_name} liked your car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_liked_your_car_link_title" added="1412225976"><![CDATA[{full_name} liked your car "<a href="{link}">{title}</a>"
+To view this car follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_liked_gender_own_car_title" added="1412226087"><![CDATA[{users} liked {gender} own car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_liked_your_car_title" added="1412226140"><![CDATA[{users} liked your car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_liked_span_class_drop_data_user_row_full_name_s_span_car_title" added="1412226200"><![CDATA[{users} liked <span class="drop_data_user">{row_full_name}&#039;s</span> car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_added_a_new_comment_on_their_own_car" added="1412226371"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on their own <a href="{title_link}">car</a>.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_added_a_new_comment_on_your_car" added="1412226438"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on your <a href="{title_link}">car</a>.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_name_added_a_new_comment_on_item_user_name_car" added="1412226498"><![CDATA[<a href="{user_link}">{user_name}</a> added a new comment on <a href="{item_user_link}">{item_user_name}&#039;s</a> <a href="{title_link}">car</a>.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="owner_full_name_added_a_new_car_a_href_title_link_title_a" added="1412226598"><![CDATA[<a href="{user_link}">{owner_full_name}</a> added a new car "<a href="{title_link}">{title}</a>".]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="user_setting_can_post_comment_on_car" added="1412226761">Can post comments on cars?</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_your_car_title" added="1412227005"><![CDATA[{full_name} commented on your car "{title}".]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_your_car_message" added="1412227064"><![CDATA[{full_name} commented on your car "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_gender_car" added="1412227128">{full_name} commented on {gender} car.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_car_full_name_s_car" added="1412227214"><![CDATA[{full_name} commented on {car_full_name}&#039;s car.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_gender_car_message" added="1412227296"><![CDATA[{full_name} commented on {gender} car "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_commented_on_car_full_name_s_car_message" added="1412227367"><![CDATA[{full_name} commented on {car_full_name}&#039;s car "<a href="{link}">{title}</a>".
+To see the comment thread, follow the link below:
+<a href="{link}">{link}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="unable_to_post_a_comment_on_this_item_due_to_privacy_settings" added="1412227488">Unable to post a comment on this item due to privacy settings.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_commented_on_gender_car_title" added="1412227661"><![CDATA[{users} commented on {gender} car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_commented_on_your_car_title" added="1412227718"><![CDATA[{users} commented on your car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="users_commented_on_span_class_drop_data_user_row_full_name_s_span_car_title" added="1412227835"><![CDATA[{users} commented on <span class="drop_data_user">{row_full_name}&#039;s</span> car "{title}"]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="full_name_wrote_a_comment_on_your_car_car_title" added="1412227950"><![CDATA[<a href="{user_link}">{full_name}</a> wrote a comment on your car "<a href="{car_link}">{car_title}</a>".]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="search_cars" added="1412228561">Search cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="view_more_cars" added="1412228593">View more cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_created_on_time_stamp_by_full_name" added="1412228748"><![CDATA[<a href="{link}">Car</a> created on {time_stamp} by <a href="{user_link}">{full_name}</a>.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="total_like" added="1412229236">Total likes</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="most_liked" added="1412229606">Most liked</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="most_discussed" added="1412229667">Most discussed</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_has_been_deleted" added="1412270615">Car has been deleted</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_successfully_deleted" added="1412270741">Car successfully deleted</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="unable_delete_the_car" added="1412270955">Unable delete the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_has_been_approved" added="1412271802">Car has been approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_approved" added="1412271899">Car Approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_title_has_been_approved" added="1412272291"><![CDATA[Your car "{title}" has been approved.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_has_been_approved_message" added="1412272421"><![CDATA[Your car "<a href=&#039;{sLink}&#039;>{title}</a>" has been approved.
+To view this car follow the link below:
+<a href="{sLink}">{sLink}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="unable_to_find_the_photo_you_plan_to_edit" added="1412401786">Unable to find the photo you plan to edit.</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_enabled_watermark_on_cars" added="1412404094"><![CDATA[<title>Water mark</title><info>Enable this option to display a watermark on the photos.<b>Attention:</b> Setting <setting>core.watermark_option</setting> should be allowed.</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="view_car" added="1412410775">View car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="failed_to_delete_photo" added="1412430492">Failed to delete photo</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="set_as_main" added="1412447235">Set as main photo</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="failed_to_set_the_main_photo" added="1412448099">Failed to set the main photo</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_add_filter" added="1412522555">Add Filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_manage_filters" added="1412522555">Manage Filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="filter_details" added="1412525963">Filter details</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="none" added="1412525996">Nope</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="submit" added="1412526386">Submit</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="name" added="1412527446">Name</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="successfully_created_a_new_filter" added="1412528859">Successfully created a new filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="add_filter" added="1412528904">Add filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="the_name_must_not_be_empty" added="1412605015">The name must not be empty</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="manage_filters" added="1412606249">Manage filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="edit" added="1412607564">Edit</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="manage_sub_filters" added="1412607657">Manage sub filters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="delete" added="1412607698">Delete</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="successfully_updated_the_filter" added="1412610885">Successfully updated the filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="successfully_deleted_the_filter" added="1412610990">Successfully deleted the filter</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="all_cars" added="1412611454">All Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="my_cars" added="1412611508">My Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="menu_cars_cars_532c28d5412dd75bf975fb951c740a30" added="1412613347">Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_export" added="1412618892">Export</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_export_cars_to_pdf" added="1412618931">Export Cars To PDF</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_add_location" added="1412676415">Add Location</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_manage_location" added="1412676415">Manage Location</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="manage_locations" added="1412677509">Manage locations</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="iso_can_only_contain_3_characters" added="1412704057">ISO can only contain 3 characters</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="location_successfully_deleted" added="1412704304">Location successfully deleted</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="location_successfully_updated" added="1412704493">Location successfully updated</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="successfully_created_a_new_location" added="1412704565">Successfully created a new location</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="add_location" added="1412704691">Add Location</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="iso_standart" added="1412705192">ISO standard(example:Kyrgyzstan - KG)</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_import" added="1412706049">Import</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="delete_selected" added="1413087736">Delete selected</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="admin_menu_manage_cars" added="1413089130">Manage Cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="export" added="1413089249">Export</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="yes" added="1413089965">Yes</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="no" added="1413090000">No</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="to_print" added="1413090076">To print</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="failed_to_save" added="1413099871">Failed to save</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="menu_cars_add_new_car_7192828280959b26bed88ecdd5a978b8" added="1413102327">Add New Car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="title_example" added="1413103274">For example:Honda</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="add_date" added="1413106040">Add date</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_pdf_columns" added="1413106657"><![CDATA[<title>&#1050;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089;&#1090;&#1086;&#1083;&#1073;&#1094;&#1086;&#1074;</title><info>&#1050;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089;&#1090;&#1086;&#1083;&#1073;&#1086;&#1074; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; PDF</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_pdf_rows" added="1413106717"><![CDATA[<title>&#1050;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089;&#1090;&#1088;&#1086;&#1082;</title><info>&#1050;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089;&#1090;&#1088;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; PDF</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="1" added="1413106768">1</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="2" added="1413106795">2</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="3" added="1413106802">3</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="4" added="1413106846">4</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="5" added="1413106853">5</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="6" added="1413106859">6</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="7" added="1413106867">7</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="8" added="1413106873">8</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="9" added="1413106879">9</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="10" added="1413106891">10</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="11" added="1413106897">11</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="12" added="1413106903">12</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="13" added="1413106936">13</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="14" added="1413106953">14</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="by_id" added="1413130315">By ID</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_image_pdf_radius" added="1413225762"><![CDATA[<title>&#1056;&#1072;&#1076;&#1080;&#1091;&#1089; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082;</title><info>&#1056;&#1072;&#1076;&#1080;&#1091;&#1089; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; PDF</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_image_pdf_radius_enable" added="1413226008"><![CDATA[<title>&#1054;&#1082;&#1088;&#1091;&#1075;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1082;&#1080; PDF</title><info>&#1050;&#1072;&#1088;&#1090;&#1080;&#1085;&#1082;&#1080; &#1087;&#1088;&#1080; &#1101;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; PDF &#1086;&#1082;&#1088;&#1091;&#1075;&#1083;&#1077;&#1085;&#1085;&#1099;&#1077;</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="20" added="1413226181">20</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="30" added="1413226206">30</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="40" added="1413226215">40</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="50" added="1413226227">50</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="60" added="1413226236">60</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="70" added="1413226245">70</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="80" added="1413226255">80</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="90" added="1413226265">90</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="100" added="1413226275">100</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="pages" added="1413306749">Pages</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="fill_all_fields" added="1413307865">Fill all fields</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="pdf_header_title" added="1413439127">www.kub.kg</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_pdf_image_width" added="1413440244"><![CDATA[<title>&#1064;&#1080;&#1088;&#1080;&#1085;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; pdf</title><info>&#1064;&#1080;&#1088;&#1080;&#1085;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; pdf &#1087;&#1088;&#1080;&#1085;&#1080;&#1084;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074; &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;, &#1077;&#1089;&#1083;&#1080; &#1074;&#1099; &#1091;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077; "0" &#1090;&#1086; &#1072;&#1074;&#1090;&#1086;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080; &#1091;&#1089;&#1090;&#1072;&#1085;&#1072;&#1074;&#1083;&#1080;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1096;&#1080;&#1088;&#1080;&#1085;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082;.</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_pdf_image_height" added="1413440494"><![CDATA[<title>&#1042;&#1099;&#1089;&#1086;&#1090;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; pdf</title><info>&#1042;&#1099;&#1089;&#1086;&#1090;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082; &#1087;&#1088;&#1080; &#1101;&#1082;&#1089;&#1087;&#1086;&#1088;&#1090;&#1077; &#1085;&#1072; pdf &#1087;&#1088;&#1080;&#1085;&#1080;&#1084;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074; &#1087;&#1080;&#1082;&#1089;&#1077;&#1083;&#1103;&#1093;, &#1077;&#1089;&#1083;&#1080; &#1074;&#1099; &#1091;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1077; "0" &#1090;&#1086; &#1072;&#1074;&#1090;&#1086;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080; &#1091;&#1089;&#1090;&#1072;&#1085;&#1072;&#1074;&#1083;&#1080;&#1074;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074;&#1099;&#1089;&#1086;&#1090;&#1072; &#1082;&#1072;&#1088;&#1090;&#1080;&#1085;&#1086;&#1082;.</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="last_added_cars" added="1414226670">Last added cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_limit_to_show_on_front_page" added="1414227774"><![CDATA[<title>Display cars limit</title><info>Display cars limit on slider</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_slider_speed" added="1414349954"><![CDATA[<title>Slider item change speed</title><info>Speed the slider is measured in milliseconds</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="like" added="1415219958">Like</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="fields_successfully_exported" added="1415257669">All fields successfully exported</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="custom_group_548b357d6a311" added="1418409341">Vehicles selected types</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="custom_group_2" added="1418657376"><![CDATA[&nbsp;]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="import_cars" added="1421145612">Import</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="delete_cars" added="1421145690">Delete</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="import_car" added="1421145922"><![CDATA[Import &#1057;ars]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_species_of_the_car" added="1421323613">Select species of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="species" added="1421325411">Species</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="cars_successfully_imported" added="1421564051"><![CDATA[&#1040;&#1074;&#1090;&#1086;&#1084;&#1086;&#1073;&#1080;&#1083;&#1080; &#1091;&#1089;&#1087;&#1077;&#1096;&#1085;&#1086; &#1080;&#1084;&#1087;&#1086;&#1088;&#1090;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1099;]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="failed_to_import_cars" added="1421564932">Failed to import cars</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="archive_successfully_deleted" added="1421601617">Archive successfully deleted</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="select_types_of_the_car" added="1421848786">Select types of the car</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="approved" added="1421851746">Approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="car_not_approved" added="1421852920">Car not approved</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_title_has_not_been_approved" added="1421853187"><![CDATA[Your car "{title}" has not been approved.]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="your_car_has_not_been_approved_message" added="1421853307"><![CDATA[&#1042;&#1072;&#1096; &#1072;&#1074;&#1090;&#1086;&#1084;&#1086;&#1073;&#1080;&#1083;&#1100; "<a href=;{sLink};>{title}</a>" &#1085;&#1077; &#1086;&#1076;&#1086;&#1073;&#1088;&#1077;&#1085; &#1084;&#1086;&#1076;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1086;&#1084;.
+&#1044;&#1083;&#1103; &#1087;&#1088;&#1086;&#1089;&#1084;&#1086;&#1090;&#1088;&#1072; &#1072;&#1074;&#1090;&#1086;&#1084;&#1086;&#1073;&#1080;&#1083;&#1103; &#1087;&#1077;&#1088;&#1077;&#1081;&#1076;&#1080;&#1090;&#1077; &#1087;&#1086; &#1089;&#1083;&#1077;&#1076;&#1091;&#1102;&#1097;&#1077;&#1081; &#1089;&#1089;&#1099;&#1083;&#1082;&#1077;:
+<a href="{sLink}">{sLink}</a>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="setting_recomended_cars_size" added="1421863138"><![CDATA[<title>The number of recommended cars</title><info>Number of cars recommended when viewing the car
+</info>]]></phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="recommended" added="1421863829">Recommended</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="more" added="1421871886">More</phrase>
+		<phrase module_id="cars" version_id="3.7.7" var_name="error_adding" added="1422035779">Error adding</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="reset" added="1478350028">Reset</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="of_zip" added="1478353033">Zip Code</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="price_range" added="1478356895">Price range</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="zip_code_of_car" added="1478364194">Zip code</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="custom_group_my_group" added="1478366527">My Group</phrase>
+		<phrase module_id="cars" version_id="1.0.0" var_name="setting_total_photo_inputs" added="1219147675"><![CDATA[<title>Number of photos</title><info>How many photos can upload</info>]]></phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="sold" added="1479144791">Sold</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="set_as_featured" added="1479197844">Set as featured</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="unset_featured" added="1479197893">Unset featured</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="failed_to_set_unset" added="1479199155">Failed to set or unset</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="successfully_set_as_featured" added="1479199645">Successfully set as featured</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="successfully_unset_featured" added="1479200646">Successfully unset featured</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="is_featured" added="1479201544">Is featured</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="custom_group_my_test_group" added="1479376719">My test group</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="custom_group_my_fields" added="1479379353">my fields</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="custom_group_test_group" added="1479390783">test group</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="is_sold" added="1479458893">Is sold</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="sold_cars" added="1479461209">My Sold Cars</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="user_setting_captcha_on_car_add" added="1479478837">Enable CAPTHCA challenge when a user adds a listing?</phrase>
+		<phrase module_id="cars" version_id="4.4.2" var_name="moderation" added="1479480376">Moderation</phrase>
+	</phrases>
+	<user_group_settings>
+		<setting is_admin_setting="0" module_id="cars" type="integer" admin="10" user="10" guest="10" staff="10" module="cars" ordering="0">max_images_per_upload</setting>
+		<setting is_admin_setting="0" module_id="cars" type="integer" admin="4000" user="4000" guest="2000" staff="2000" module="cars" ordering="0">photo_max_upload_size</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="false" staff="false" module="cars" ordering="0">can_use_editor_on_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="integer" admin="0" user="0" guest="0" staff="0" module="cars" ordering="0">flood_control_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="false" user="false" guest="false" staff="false" module="cars" ordering="0">cars_must_be_approved</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="false" guest="false" staff="false" module="cars" ordering="0">can_manage_custom_fields</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="false" staff="false" module="cars" ordering="0">add_new_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="true" staff="true" module="cars" ordering="0">can_view_cars</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="true" staff="true" module="cars" ordering="0">can_edit_own_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="false" staff="false" module="cars" ordering="0">can_control_comments_on_cars</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="false" guest="false" staff="false" module="cars" ordering="0">can_approve_cars</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="true" staff="true" module="cars" ordering="0">can_delete_own_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="true" user="true" guest="false" staff="false" module="cars" ordering="0">can_post_comment_on_car</setting>
+		<setting is_admin_setting="0" module_id="cars" type="boolean" admin="false" user="false" guest="false" staff="false" module="cars" ordering="0">captcha_on_car_add</setting>
+	</user_group_settings>
+</module>

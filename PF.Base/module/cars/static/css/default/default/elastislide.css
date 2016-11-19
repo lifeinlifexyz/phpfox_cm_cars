@@ -1,0 +1,71 @@
+/* Стили плагина Elastislide */
+.es-carousel-wrapper {
+	background: #ECECEC;
+	padding:10px 37px;
+	position:relative;
+    /*width: 430px;*/
+    border-bottom: 1px #DFDFDF solid;
+}
+.es-carousel{
+    overflow:hidden;
+	background: #ECECEC;
+    position: relative;
+}
+.es-carousel ul{
+	display:none;
+}
+.es-carousel ul li{
+	/*height: 90px;*/
+	float:left;
+	display:block;
+    width: 90px !important;
+}
+.es-carousel ul li a{
+	display: block;
+    border-style: solid;
+    border-color: #999999;  
+}
+.es-carousel ul li a img{
+	display:block;
+	border:none;
+	max-height:100%;
+	max-width:100%;
+}
+.es-nav span{
+	position:absolute;
+	top:50%;
+	left:12px;
+	background:transparent url(nav.png) no-repeat top left;
+	width:14px;
+	height:26px;
+	margin-top:-13px;
+	text-indent:-9000px;
+	cursor:pointer;
+	opacity:0.8;
+}
+.es-nav span.es-nav-next{
+	right:12px;
+	left:auto;
+	background-position:top right;
+}
+.es-nav span:hover{
+	opacity:1.0;
+}
+.image_holder{
+    margin: 0 auto;
+}
+
+#edit_delete_image {
+	opacity: 0;
+    overflow: hidden;
+}
+#carousel .es-carousel:hover #edit_delete_image {
+	opacity: 0;
+    overflow: hidden;    
+}
+#carousel .es-carousel:hover li:hover #edit_delete_image {
+	opacity: 0.7; 
+}
+#carousel .es-carousel:hover li:hover #edit_delete_image:hover {
+	opacity: 1;
+}
