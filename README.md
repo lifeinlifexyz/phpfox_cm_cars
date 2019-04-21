@@ -7,7 +7,6 @@
 <ul>
 <li>Product version: <strong>1.0.1</strong></li>
 <li>Compatible with phpFox: <strong>4.2.*</strong> - <strong>4.6.*</strong></li>
-<li>Demo profile: (user: demo@codemake.org, pass: 123456)</li>
 </ul>
 <h1>Frontend:</h1>
 <ul>
