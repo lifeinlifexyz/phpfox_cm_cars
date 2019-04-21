@@ -2,7 +2,7 @@
 
 <p>The Auto app is a turnkey auto classified that contains everything you need to give pre-owned car dealers or individuals wanting to sell their cars an online marketplace. Built for a local business, it is equally good for running countrywide used car classified social network.   </p>
 
-![alt text](http://d2h79mkp7etn4r.cloudfront.net/screenshots/2017/03/e0c8fb28a89976b5ebd00c7e933c01e2.png)
+![alt text](https://d2h79mkp7etn4r.cloudfront.net/screenshots/2016/11/1e5128977859a226ce123a9657405eba.png)
 <h2>Product information:</h2>
 <ul>
 <li>Product version: <strong>1.0.1</strong></li>
