@@ -1,3 +1,7 @@
+<strong>Paid Support:</strong>       
+The phpfox apps and themes by codemake are provided under the MIT license with no commercial support or liability. 
+phpfox@lifeinlife.xyz also provides commercial support and professional customisation services.
+
 <h2>PHPFox Cars App</h2>
 
 <p>The Auto app is a turnkey auto classified that contains everything you need to give pre-owned car dealers or individuals wanting to sell their cars an online marketplace. Built for a local business, it is equally good for running countrywide used car classified social network.   </p>
