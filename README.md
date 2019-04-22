@@ -1,6 +1,6 @@
 <h2>Paid Support:</h2>       
-The phpfox apps and themes by codemake are provided under the MIT license with no commercial support or liability. 
-phpfox@lifeinlife.xyz also provides commercial support and professional customisation services.
+<p>The phpfox apps and themes by codemake are provided under the MIT license with no commercial support or liability. 
+<a href="mailto:phpfox@lifeinlife.xyz">phpfox@lifeinlife.xyz</a> also provides commercial support and professional customisation services.</p>
 
 <h2>PHPFox Cars App</h2>
 
